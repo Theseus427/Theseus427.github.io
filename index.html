@@ -21,6 +21,7 @@
             min-height: 100vh;
             touch-action: none;
             overflow: hidden;
+            padding-bottom: 20px;
         }
 
         .game-container {
@@ -31,6 +32,7 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             margin: 5px auto;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -122,28 +124,30 @@
         .touch-controls {
             display: none;
             width: 100%;
-            max-width: 200px;
-            margin: 10px auto;
+            max-width: 180px;
+            margin: 5px auto;
+            padding-bottom: 10px;
         }
 
         @media (max-width: 768px) {
             .touch-controls {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 5px;
-                padding: 5px;
+                gap: 3px;
+                padding: 3px;
             }
 
             .touch-btn {
                 aspect-ratio: 1;
                 background: rgba(255, 255, 255, 0.1);
                 border: none;
-                border-radius: 8px;
+                border-radius: 6px;
                 color: white;
-                font-size: 20px;
+                font-size: 18px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                min-height: 40px;
             }
 
             .touch-btn:active {
